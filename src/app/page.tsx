@@ -151,6 +151,8 @@ export default function LandingPage() {
             names={["Brand A", "Brand B", "Brand C", "Brand D"]}
             title="Collaborators"
             description="Partnering with brands that define their industries."
+            textboxLayout="default"
+            useInvertedBackground={false}
           />
         </div>
 
