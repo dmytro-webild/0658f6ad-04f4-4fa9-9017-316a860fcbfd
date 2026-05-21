@@ -46,10 +46,10 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
           <HeroCentered
             background={{ variant: "sparkles-gradient" }}
-            title="Augurad Media: Redefining Modern Content"
+            title="Augurad Media Redefining Modern Content"
             description="High-impact creative production for brands that refuse to blend in. We turn visions into high-fidelity reality."
             avatars={[
-              { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3E0k3DUSx6jycohvNHuDEDzfPVY/uploaded-1779323392402-kdijrktl.png", alt: "Augurad Studio" },
+              { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3E0k3DUSx6jycohvNHuDEDzfPVY/uploaded-1779324848692-f1k003fq.jpg", alt: "Augurad Studio" },
             ]}
             buttons={[{ text: "Book Production", href: "#contact" }]}
             marqueeItems={[
