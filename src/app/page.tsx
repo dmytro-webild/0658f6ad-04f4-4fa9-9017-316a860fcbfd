@@ -22,11 +22,11 @@ export default function LandingPage() {
         borderRadius="pill"
         contentWidth="mediumSmall"
         sizing="medium"
-        background="grid"
+        background="noiseDiagonalGradient"
         cardStyle="glass-depth"
         primaryButtonStyle="diagonal-gradient"
         secondaryButtonStyle="radial-glow"
-        headingFontWeight="semibold"
+        headingFontWeight="extrabold"
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
@@ -45,31 +45,27 @@ export default function LandingPage() {
 
         <div id="hero" data-section="hero">
           <HeroCentered
-            background={{ variant: "gradient-bars" }}
-            title="Defining Luxury Media Production"
-            description="Augurad Media is the gold standard in bespoke content creation, photography, and social strategy. Elevate your presence to the extraordinary."
+            background={{ variant: "sparkles-gradient" }}
+            title="Augurad Media: Redefining Modern Content"
+            description="High-impact creative production for brands that refuse to blend in. We turn visions into high-fidelity reality."
             avatars={[
-              { src: "http://img.b2bpic.net/free-photo/portrait-young-female-dentist-dentistry-concept-dental-treatment_169016-67066.jpg", alt: "professional woman headshot studio" },
-              { src: "http://img.b2bpic.net/free-photo/young-successful-businessman-thinking-posing-beige-wall_176420-144.jpg", alt: "male director headshot professional" },
-              { src: "http://img.b2bpic.net/free-photo/caucasian-businesswoman-with-elegance-confidence-standing-generative-ai_188544-7684.jpg", alt: "creative professional headshot portrait" },
-              { src: "http://img.b2bpic.net/free-photo/medium-shot-smiley-woman-posing_23-2148924772.jpg", alt: "marketing executive headshot studio" },
-              { src: "http://img.b2bpic.net/free-photo/sexy-blond-female-black-costume-sits-round-black-chair-empty-room_613910-8182.jpg", alt: "agency founder professional headshot" },
+              { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3E0k3DUSx6jycohvNHuDEDzfPVY/uploaded-1779323392402-kdijrktl.png", alt: "Augurad Studio" },
             ]}
             buttons={[{ text: "Book Production", href: "#contact" }]}
             marqueeItems={[
-              { type: "text", text: "Cinematic Quality" },
-              { type: "text", text: "Strategic Growth" },
-              { type: "text", text: "Global Reach" },
-              { type: "text", text: "Bespoke Production" },
-              { type: "text", text: "Visual Excellence" },
+              { type: "text", text: "Content Creation" },
+              { type: "text", text: "Photography" },
+              { type: "text", text: "Social Media Strategy" },
+              { type: "text", text: "Podcast Production" },
+              { type: "text", text: "Event Media" },
             ]}
           />
         </div>
 
         <div id="about" data-section="about">
           <TextAbout
-            useInvertedBackground={false}
-            title="Crafting Auras That Transcend Ordinary Content"
+            useInvertedBackground={true}
+            title="We are the bridge between your brand and the culture that consumes it."
             buttons={[{ text: "Our Creative Vision", href: "#services" }]}
           />
         </div>
@@ -79,22 +75,22 @@ export default function LandingPage() {
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={false}
-            title="Our Premiere Production Services"
-            description="From high-fidelity photography to full-scale event production, we manage the full creative lifecycle."
+            title="Comprehensive Media Solutions"
+            description="From high-end photography to full-scale event production, we manage the full creative lifecycle for ambitious brands."
             features={[
               {
-                title: "Photography & Creation",                description: "High-end editorial, event, and commercial photography designed to capture the essence of luxury.",                media: { imageSrc: "http://img.b2bpic.net/free-photo/camcorder-with-filmstrip-peach-colored-backdrop-with-filmstrip-peach-colored-backdrop_23-2148188112.jpg", imageAlt: "professional photography studio luxury" },
+                title: "Content & Photography",                description: "Elite editorial and commercial photography tailored to your brand identity.",                media: { imageSrc: "https://img.b2bpic.net/free-photo/professional-photographer-studio_23-2148188112.jpg" },
                 items: [{ icon: Camera, text: "Editorial" }, { icon: Zap, text: "Flash" }, { icon: Star, text: "High Fashion" }],
                 reverse: false
               },
               {
-                title: "Social Media Strategy",                description: "Bespoke content roadmaps that amplify your brand aura, managed with expert precision.",                media: { imageSrc: "http://img.b2bpic.net/free-photo/top-view-notebook-yellow-background_23-2149382391.jpg", imageAlt: "digital media analytics dashboard holographic" },
-                items: [{ icon: Share2, text: "Analytics" }, { icon: TrendingUp, text: "Growth" }, { icon: Shield, text: "Verification" }],
+                title: "Social Strategy",                description: "Data-driven content roadmaps that amplify your presence and drive engagement.",                media: { imageSrc: "https://img.b2bpic.net/free-photo/top-view-notebook-yellow-background_23-2149382391.jpg" },
+                items: [{ icon: Share2, text: "Growth" }, { icon: TrendingUp, text: "Trends" }, { icon: Shield, text: "Identity" }],
                 reverse: true
               },
               {
-                title: "Podcast & Events",                description: "Professional studio production and experiential event media management.",                media: { imageSrc: "http://img.b2bpic.net/free-photo/urban-apartment-with-minimalist-home-office-wooden-furniture_482257-120933.jpg", imageAlt: "modern podcast studio setup high-end" },
-                items: [{ icon: Mic, text: "Broadcast" }, { icon: Video, text: "Live" }, { icon: Music, text: "Audio" }],
+                title: "Podcast & Events",                description: "Professional-grade production for events and digital broadcast shows.",                media: { imageSrc: "https://img.b2bpic.net/free-photo/urban-apartment-with-minimalist-home-office-wooden-furniture_482257-120933.jpg" },
+                items: [{ icon: Mic, text: "Podcast" }, { icon: Video, text: "Broadcast" }, { icon: Music, text: "Live Event" }],
                 reverse: false
               }
             ]}
@@ -105,17 +101,14 @@ export default function LandingPage() {
           <ProductCardThree
             animationType="slide-up"
             textboxLayout="default"
-            gridVariant="uniform-all-items-equal"
-            useInvertedBackground={false}
-            title="Selected Editorial & Media Highlights"
-            description="Evidence of excellence in every frame and pixel."
+            gridVariant="bento-grid"
+            useInvertedBackground={true}
+            title="Selected Work"
+            description="Excellence in every frame."
             products={[
-              { id: "p1", name: "Fashion Editorial", price: "Production", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-woman-with-albinism-posing-studio_23-2150535751.jpg" },
-              { id: "p2", name: "Exclusive Event Series", price: "Management", imageSrc: "http://img.b2bpic.net/free-photo/wonderful-wedding-table-amazing-restaurant_8353-9875.jpg" },
-              { id: "p3", name: "Brand Aura Film", price: "Creative", imageSrc: "http://img.b2bpic.net/free-photo/actor-front-camera-audition_53876-139546.jpg" },
-              { id: "p4", name: "Portrait Collection", price: "Bespoke", imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-girl-smiling-sitting-floor-white-wall_176420-8548.jpg" },
-              { id: "p5", name: "Corporate Highlights", price: "Visual", imageSrc: "http://img.b2bpic.net/free-photo/gorgeous-blonde-fashion-model-white-suit-sits-soft-armchair-holding-her-legs-up_8353-5467.jpg" },
-              { id: "p6", name: "Event Recap Experience", price: "Coverage", imageSrc: "http://img.b2bpic.net/free-photo/close-up-glasses-with-champagne-bubbles_23-2148339537.jpg" },
+              { id: "1", name: "Fashion Editorial", price: "Content", imageSrc: "https://img.b2bpic.net/free-photo/woman-with-albinism-posing-studio_23-2150535751.jpg" },
+              { id: "2", name: "Brand Aura Film", price: "Video", imageSrc: "https://img.b2bpic.net/free-photo/actor-front-camera-audition_53876-139546.jpg" },
+              { id: "3", name: "Event Recap", price: "Events", imageSrc: "https://img.b2bpic.net/free-photo/close-up-glasses-with-champagne-bubbles_23-2148339537.jpg" },
             ]}
           />
         </div>
@@ -125,12 +118,12 @@ export default function LandingPage() {
             animationType="slide-up"
             textboxLayout="default"
             useInvertedBackground={false}
-            title="The Impact of Premium Media"
-            description="Data-backed results for luxury brands."
+            title="Proven Impact"
+            description="Measurable results for premium clients."
             metrics={[
-              { id: "m1", icon: Users, title: "Brand Impressions", value: "1.2M+" },
-              { id: "m2", icon: Award, title: "Events Produced", value: "50+" },
-              { id: "m3", icon: Camera, title: "Projects Completed", value: "200+" },
+              { id: "m1", icon: Users, title: "Audience Reach", value: "1.5M+" },
+              { id: "m2", icon: Zap, title: "Content Pieces", value: "500+" },
+              { id: "m3", icon: Award, title: "Events Managed", value: "75+" },
             ]}
           />
         </div>
@@ -138,44 +131,40 @@ export default function LandingPage() {
         <div id="testimonials" data-section="testimonials">
           <TestimonialCardSixteen
             animationType="slide-up"
-            textboxLayout="default"
-            useInvertedBackground={false}
-            title="Trusted by Visionaries"
-            description="What our clients say about our creative process and delivery."
+            textboxLayout="split"
+            useInvertedBackground={true}
+            title="Client Success Stories"
+            description="What visionaries have to say about us."
             kpiItems={[
-              { value: "100%", label: "Client Satisfaction" },
-              { value: "5x", label: "Growth Rate" },
-              { value: "24/7", label: "Support" },
+              { value: "100%", label: "Satisfaction" },
+              { value: "5.2x", label: "ROI Growth" },
+              { value: "24/7", label: "Dedication" },
             ]}
             testimonials={[
-              { id: "1", name: "Sarah V.", role: "Creative Director", company: "Vogue Interiors", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/beautiful-business-woman-portrait_23-2149280717.jpg" },
-              { id: "2", name: "James L.", role: "CEO", company: "Lux Group", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/bearded-grey-haired-elderly-man-dressed-formal-suit_273609-6125.jpg" },
-              { id: "3", name: "Elena M.", role: "Brand Manager", company: "Elite Beauty", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/interested-gorgeous-man-with-black-eyes-looking-indoor-photo-fashionable-well-dressed-african-guy-glasses_197531-22079.jpg" },
-              { id: "4", name: "Marcus R.", role: "Producer", company: "Sky Films", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/people-having-dinner-luxurious-restaurants_23-2151081913.jpg" },
-              { id: "5", name: "Sofia K.", role: "Founder", company: "Boutique Label", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/sexy-blond-female-black-costume-sits-round-black-chair-empty-room_613910-8182.jpg" },
+              { id: "1", name: "Alex Rivera", role: "Director", company: "Luxe Global", rating: 5 },
             ]}
           />
         </div>
 
         <div id="socialProof" data-section="socialProof">
           <SocialProofOne
-            textboxLayout="default"
-            useInvertedBackground={false}
-            names={["LuxeLife", "GlobalMedia", "EliteProductions", "VisionaryBrands", "UrbanContent"]}
-            title="Our Creative Partners"
-            description="Collaborating with elite global brands."
+            names={["Brand A", "Brand B", "Brand C", "Brand D"]}
+            title="Collaborators"
+            description="Partnering with brands that define their industries."
           />
         </div>
 
         <div id="contact" data-section="contact">
           <ContactSplitForm
-            useInvertedBackground={false}
-            title="Initiate Your Project"
-            description="Get in touch for bespoke media production. Phone: 0714492076 | @auguradmedia"
-            inputs={[{ name: "name", type: "text", placeholder: "Name", required: true }, { name: "email", type: "email", placeholder: "Email", required: true }]}
-            textarea={{ name: "message", placeholder: "Project Details", required: true }}
-            imageSrc="http://img.b2bpic.net/free-photo/flat-lay-black-background-with-laptop-coffee-cup-calculator-top-view_169016-34849.jpg"
-            mediaPosition="right"
+            useInvertedBackground={true}
+            title="Start Your Project"
+            description="Call us at 0714492076 or follow us at @auguradmedia. Let's create something extraordinary."
+            inputs={[
+              { name: "name", type: "text", placeholder: "Name", required: true },
+              { name: "email", type: "email", placeholder: "Email", required: true }
+            ]}
+            textarea={{ name: "message", placeholder: "Tell us about your production vision", required: true }}
+            buttonText="Send Request"
           />
         </div>
 
@@ -183,8 +172,8 @@ export default function LandingPage() {
           <FooterBaseCard
             logoText="Augurad Media"
             columns={[
-              { title: "Company", items: [{ label: "About", href: "#about" }, { label: "Services", href: "#services" }] },
-              { title: "Connect", items: [{ label: "Instagram", href: "https://instagram.com/auguradmedia" }, { label: "Contact", href: "#contact" }] },
+              { title: "Services", items: [{ label: "Photography", href: "#services" }, { label: "Production", href: "#services" }] },
+              { title: "Social", items: [{ label: "Instagram", href: "https://instagram.com/auguradmedia" }, { label: "Contact", href: "#contact" }] }
             ]}
           />
         </div>
