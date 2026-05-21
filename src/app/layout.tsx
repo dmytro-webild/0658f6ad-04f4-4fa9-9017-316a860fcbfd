@@ -12,8 +12,8 @@ import { Open_Sans } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'Augurad Media | Luxury Content & Production',
-  description: 'Premier content creation and media production. Expert photography, social media strategy, and event management.',
+  title: "Augurad Media | Content & Production",
+  description: "Premier content creation and media production. Expert photography, social media strategy, and event management.",
   openGraph: {
     "title": "Augurad Media",
     "description": "Defining luxury in media production.",
