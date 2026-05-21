@@ -122,8 +122,8 @@ export default function LandingPage() {
             description="Measurable results for premium clients."
             metrics={[
               { id: "m1", icon: Users, title: "Audience Reach", value: "1.5M+" },
-              { id: "m2", icon: Zap, title: "Content Pieces", value: "500+" },
-              { id: "m3", icon: Award, title: "Events Managed", value: "75+" },
+              { id: "m2", icon: Zap, title: "Content Pieces", value: "50+" },
+              { id: "m3", icon: Award, title: "Events Managed", value: "49+" },
             ]}
           />
         </div>
@@ -148,7 +148,7 @@ export default function LandingPage() {
 
         <div id="socialProof" data-section="socialProof">
           <SocialProofOne
-            names={["Brand A", "Brand B", "Brand C", "Brand D"]}
+            names={["Brand A", "Brand B", "The Masculine Strategy.", "AMOBIC HOMES"]}
             title="Collaborators"
             description="Partnering with brands that define their industries."
             textboxLayout="default"
